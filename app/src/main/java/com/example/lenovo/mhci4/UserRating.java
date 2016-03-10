@@ -1,6 +1,7 @@
 package com.example.lenovo.mhci4;
 
 import android.content.Intent;
+import android.media.Rating;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class UserRating extends AppCompatActivity {
 
@@ -23,12 +25,22 @@ public class UserRating extends AppCompatActivity {
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        TextView textView = new TextView(this);
-        textView.setTextSize(40);
-        textView.setText(message);
+        String rate = intent.getStringExtra(MainActivity.RATING);
 
-        RelativeLayout layout = (RelativeLayout) findViewById(R.id.content);
-        layout.addView(textView);
+        TextView textView1 = (TextView)findViewById(R.id.commenttxt);
+        textView1.setTextSize(12);
+        textView1.setText(message);
+
+        TextView textView2 = (TextView)findViewById(R.id.ratingtxt);
+        textView2.setTextSize(12);
+        textView2.setText(rate);
+
+
+    }
+
+    public void returnHome(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        finish();
     }
 
 

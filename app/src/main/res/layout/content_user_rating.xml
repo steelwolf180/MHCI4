@@ -14,4 +14,187 @@
     tools:showIn="@layout/activity_user_rating">
 
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:onClick="returnHome"
+        android:id="@+id/btnHome"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/usr3rate"
+        android:layout_toEndOf="@+id/imageView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingtxt"
+        android:text="Empty Text"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignStart="@+id/commenttxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commenttxt"
+        android:text="Empty Text"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/ratingtxt"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/profilepicture1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:id="@+id/usr1name"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/btnHome" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ron"
+        android:id="@+id/txtName1"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/commenttxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment:"
+        android:id="@+id/usr1comment"
+        android:layout_alignTop="@+id/commenttxt"
+        android:layout_alignEnd="@+id/btnHome" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating:"
+        android:id="@+id/usr1rate"
+        android:layout_alignTop="@+id/ratingtxt"
+        android:layout_alignStart="@+id/usr1name" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/profilepicture2"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/profilepicture3"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:id="@+id/usr2name"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignEnd="@+id/usr2comment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment:"
+        android:id="@+id/usr2comment"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/usr2rate"
+        android:layout_alignEnd="@+id/usr1name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating:"
+        android:id="@+id/usr2rate"
+        android:layout_above="@+id/imageView4"
+        android:layout_alignEnd="@+id/usr2comment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:id="@+id/usr3name"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignEnd="@+id/usr1rate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment:"
+        android:id="@+id/usr3comment"
+        android:layout_below="@+id/usr3name"
+        android:layout_alignEnd="@+id/usr3name"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating:"
+        android:id="@+id/usr3rate"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignStart="@+id/usr3name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arthur"
+        android:id="@+id/txtusr2name"
+        android:layout_alignTop="@+id/usr2name"
+        android:layout_alignStart="@+id/ratingtxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="slient treatment"
+        android:id="@+id/txtusr2comment"
+        android:layout_alignBottom="@+id/usr2comment"
+        android:layout_alignStart="@+id/txtusr2name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.5"
+        android:id="@+id/txtusr2rate"
+        android:layout_below="@+id/usr2comment"
+        android:layout_alignStart="@+id/txtusr2comment" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ken"
+        android:id="@+id/txtusr3name"
+        android:layout_alignTop="@+id/usr3name"
+        android:layout_alignStart="@+id/txtusr2rate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Great service"
+        android:id="@+id/txtusr3comment"
+        android:layout_alignTop="@+id/usr3comment"
+        android:layout_alignStart="@+id/txtusr3name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.5"
+        android:id="@+id/txtusr3rate"
+        android:layout_alignTop="@+id/usr3rate"
+        android:layout_alignStart="@+id/txtusr3comment" />
+
 </RelativeLayout>
